@@ -25,6 +25,92 @@
 
       <!-- 6) Ссылка на фрагмент текущей страницы -->
       <li><a href="#form-section">Ссылка на фрагмент страницы</a></li>
+
+      <!-- 7) ссылку с тремя параметрами в URL -->
+      <li>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&start=120&autoplay=1&list=PLxyz123">
+        Смотреть видео со 2-й минуты (автозапуск)</a>
+      </li>
+      
+      <!-- 8) Ссылка с параметром id -->
+      <li><a href="#section-about">Перейти к разделу "О нас"</a></li>
+
+      <!--9) относительная на страницу в текущем каталоге-->
+      <li><a href="contact.html">Относительная ссылка в текущем каталоге</a></li>
+
+      <!--10) относительная на страницу в каталоге about-->
+      <li><a href="about/index.html">Относительная ссылка в каталоге about</a></li>
+
+      <!--11) относительная на страницу в каталоге уровнем выше текущего-->
+      <li><a href="../page.html">Относительная ссылка на уровень выше</a></li>
+
+      <!--12) относительную на страницу в каталоге двумя уровнями выше-->
+      <li><a href="../../page.html">Относительная ссылка на два уровня выше</a></li>
+
+      <!--13) контекстную в тексте абзаца-->
+       <li>
+         <p>Это абзац с <a href="https://kubsu.ru/">контекстной ссылкой</a> внутри текста.</p>
+       </li>
+
+      <!--14) ссылку на фрагмент страницы стороннего сайта-->
+      <li>
+        <a href="https://developer.mozilla.org/ru/docs/Web/HTML#reference">Ссылка на фрагмент MDN</a>
+      </li>
+      
+      <!--15) ссылки из прямоугольных и круглых областей картинки (HTML-тег map);-->
+      <li>
+        <img src="https://via.placeholder.com/300x150" alt="Image map" usemap="#examplemap" width="300" height="150">
+        <map name="examplemap">
+          <area shape="rect" coords="0,0,150,150" href="https://kubsu.ru/" alt="Прямоугольная область">
+          <area shape="circle" coords="225,75,50" href="https://kubsu.ru/en/" alt="Круглая область">
+        </map>
+      </li>
+
+      <!--16) ссылку с пустым href-->
+      <li><a href="">Ссылка с пустым href</a></li>
+
+      <!--17) ссылку без href-->
+      <li><a>Ссылка без href</a></li>
+
+      <!--18) ссылку, по которой запрещен переход поисковикам-->
+      <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка с rel="nofollow"</a></li>
+
+      <!--19) запрещенную для индексации поисковиками-->
+      <li><a href="https://kubsu.ru/" rel="noindex">Ссылка с rel="noindex"</a></li>
+
+      <!--20) нумерованный список ссылок с подписями title-->
+      <li>
+        <ol>
+          <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">КубГУ с title</a></li>
+          <li><a href="https://kubsu.ru/en/" title="English version of KubSU">КубГУ English с title</a></li>
+        </ol>
+      </li>
+
+      <!--21)ссылку на файл на сервере FTP с авторизацией-->
+      <li><a hsef = "ftp://username:password@ftp.example.com/file.pdf">Ссылка на FTP файл</a></li>
     </ul>
+    <section id="section-about">
+      <h2>О нас</h2>
+      <p>Содержание раздела...</p>
+    </section>
+    <!-- Форма -->
+    <h3 id="form-section">Форма обратной связи</h3>
+    <form action="/submit" method="post">
+      <div>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Отправить</button>
+        </div>
+    </form>
   </body>
 
