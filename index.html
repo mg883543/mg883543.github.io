@@ -32,7 +32,7 @@
       </li>
       
       <!-- 8) Ссылка с параметром id -->
-      <li><a href="https://en.wikipedia.org/w/index.php?curid=12345">Ссылка с параметром"</a></li>
+      <li><a href="https://en.wikipedia.org/w/index.php?curid=12345">Ссылка с параметром</a></li>
 
       <!--9) относительная на страницу в текущем каталоге-->
       <li><a href="contact.html">Относительная ссылка в текущем каталоге</a></li>
@@ -132,7 +132,8 @@
       <!-- Любимый язык программирования -->
       <div class="form-group">
         <label for="language">Любимый язык программирования:</label>
-        <select id="language" name="language" multiple size="5" required>
+        <small>Для множественного выбора используйте Ctrl+Click (или Cmd+Click на Mac)</small>
+        <div><select id="language" name="language" multiple size="5" required>
           <option value="pascal">Pascal</option>
           <option value="c">C</option>
           <option value="cpp">C++</option>
@@ -144,13 +145,12 @@
           <option value="clojure">Clojure</option>
           <option value="prolog">Prolog</option>
           <option value="scala">Scala</option>
-        </select>
-        <small>Для множественного выбора используйте Ctrl+Click (или Cmd+Click на Mac)</small>
+        </select></div>
       </div>
       <!-- Биография -->
       <div class="form-group">
         <label for="bio">Биография:</label>
-        <label textarea id="bio" name="bio" rows="5" required placeholder="Расскажите о себе"></textarea></label>
+        <div><textarea id="bio" name="bio" rows="5" required placeholder="Расскажите о себе"></textarea></div>
       </div>
       <!-- Соглашение -->
       <div class="form-group">
