@@ -8,55 +8,40 @@
   <body>
     <h1>Список гиперссылок</h1>
     <ul>
-      <!-- 1)Абсолютная гиперссылка на главную страницу сайта kubsu.ru -->
       <li><a href="http://kubsu.ru/">КубГУ</a></li>
       
-      <!-- 2)Абсолютная на главную страницу сайта kubsu.ru в протоколе https -->
       <li><a href="https://kubsu.ru/">КубГу (https)</a></li>
       
-      <!-- 3)ссылка-изображение -->
       <li><img src="image.jpg" alt="Цветок" width="200" height="150"/></li>
       
-      <!-- 4)Cокращенная ссылка на внутреннюю страницу -->
       <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
       
-      <!-- 5) Сокращенная ссылка на главную страницу -->
       <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
 
-      <!-- 6) Ссылка на фрагмент текущей страницы -->
       <li><a href="#form-section">Ссылка на фрагмент страницы</a></li>
 
-      <!-- 7) ссылку с тремя параметрами в URL -->
       <li>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&start=120&autoplay=1&list=PLxyz123">Смотреть видео со 2-й минуты (автозапуск)</a>
       </li>
       
-      <!-- 8) Ссылка с параметром id -->
       <li><a href="https://en.wikipedia.org/w/index.php?curid=12345">Ссылка с параметром</a></li>
 
-      <!--9) относительная на страницу в текущем каталоге-->
       <li><a href="contact.html">Относительная ссылка в текущем каталоге</a></li>
 
-      <!--10) относительная на страницу в каталоге about-->
       <li><a href="about/index.html">Относительная ссылка в каталоге about</a></li>
 
-      <!--11) относительная на страницу в каталоге уровнем выше текущего-->
       <li><a href="../page.html">Относительная ссылка на уровень выше</a></li>
 
-      <!--12) относительную на страницу в каталоге двумя уровнями выше-->
       <li><a href="../../page.html">Относительная ссылка на два уровня выше</a></li>
 
-      <!--13) контекстную в тексте абзаца-->
        <li>
          <p>Это абзац с <a href="https://kubsu.ru/">контекстной ссылкой</a> внутри текста.</p>
        </li>
 
-      <!--14) ссылку на фрагмент страницы стороннего сайта-->
       <li>
         <a href="https://developer.mozilla.org/ru/docs/Web/HTML#reference">Ссылка на фрагмент MDN</a>
       </li>
       
-      <!--15) ссылки из прямоугольных и круглых областей картинки (HTML-тег map);-->
       <li>
         <img src="i.png" usemap="#фигуры" width="300" height="150">
         <map name="фигуры">
@@ -65,19 +50,14 @@
         </map>
       </li>
 
-      <!--16) ссылку с пустым href-->
       <li><a href="">Ссылка с пустым href</a></li>
 
-      <!--17) ссылку без href-->
       <li><a>Ссылка без href</a></li>
 
-      <!--18) ссылку, по которой запрещен переход поисковикам-->
       <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка с rel="nofollow"</a></li>
 
-      <!--19) запрещенную для индексации поисковиками-->
       <li><a href="https://kubsu.ru/" rel="noindex">Ссылка с rel="noindex"</a></li>
 
-      <!--20) нумерованный список ссылок с подписями title-->
       <li>
         <ol>
           <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">КубГУ с title</a></li>
@@ -85,37 +65,31 @@
         </ol>
       </li>
 
-      <!--21)ссылку на файл на сервере FTP с авторизацией-->
       <li><a href = "ftp://username:password@ftp.example.com/file.pdf">Ссылка на FTP файл</a></li>
     </ul>
-    <section id="section-about">
-      <h2>О нас</h2>
-      <p>Содержание раздела...</p>
-    </section>
+    <header>
+      <h1>Моя таблица</h1>
+      <img src="image.png" alt="Шапка сайта" class="header-image">
+   </header>
     <!-- Форма -->
     <h3 id="form-section">Форма обратной связи</h3>
     <form action="/submit" method="post">
-    <!-- ФИО -->
       <div class="form-group">
         <label for="fullname">ФИО:</label>
         <input type="text" id="fullname" name="fullname" required placeholder="Введите ваше полное имя">
       </div>
-    <!-- Телефон -->
       <div class="form-group">
         <label for="phone">Телефон:</label>
         <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
       </div>
-    <!-- Email -->
       <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required placeholder="example@mail.com">
       </div>
-    <!-- Дата рождения -->
       <div class="form-group">
         <label for="birthdate">Дата рождения:</label>
         <input type="date" id="birthdate" name="birthdate" required>
       </div>
-    <!-- Пол -->
       <div class="form-group">
         <label>Пол:</label>
         <div class="radio-group">
@@ -129,7 +103,6 @@
           </div>
         </div>
       </div>
-      <!-- Любимый язык программирования -->
       <div class="form-group">
         <label for="language">Любимый язык программирования:</label>
         <small>Для множественного выбора используйте Ctrl+Click (или Cmd+Click на Mac)</small>
@@ -147,20 +120,16 @@
           <option value="scala">Scala</option>
         </select></div>
       </div>
-      <!-- Биография -->
       <div class="form-group">
         <label for="bio">Биография:</label>
         <div><textarea id="bio" name="bio" rows="5" required placeholder="Расскажите о себе"></textarea></div>
       </div>
-      <!-- Соглашение -->
       <div class="form-group">
         <div class="checkbox-group">
           <input type="checkbox" id="agreement" name="agreement" required>
           <label for="agreement">Ознакомлен(а)</label>
         </div>
       </div>
-      <!-- Кнопка отправки -->
       <button type="submit">Сохранить</button>
     </form>
   </body>
-
