@@ -8,18 +8,17 @@ header{
    color: white;
    padding: 20px 0;
    text-align: center;
-   width: 150%;
+   width: 100%;
 }
 nav{
    background-color: #6b7155;
-   width: 150%;
+   width: 50%;
  }
 nav ul{
       list-style: none;
       padding: 8px 0;
       display: flex;
       justify-content: center;
-      width: 100%;
       max-width: 960px;
       margin: 0 auto;
 }
@@ -37,14 +36,12 @@ main {
 }
 table{
    width: 100%;
-   max-width: 960px;
    border-collapse: collapse;
    margin: 20px 0;
    background-color: white;
    border: 2px solid #6b7155;
  }
 #main-table th a {
-      max-width: 960px;
       color: white;
       text-decoration: none;
       display: block;
@@ -70,15 +67,15 @@ tfoot td {
       background-color: #474E2B;
       color: white;
       font-weight: bold;
-      max-width: 960px;
 }
 footer {
    background-color: #474E2B;
    color: white;
    text-align: center;
    padding: 10px 0;
-   width: 150%;
+   width: 100%;
 }
+
 
 
 
