@@ -3,8 +3,69 @@
   <head>
     <meta charsset="UTF-8">
     <title>Список гиперссылок</title>
+    <link rel="stylesheet" href="/styles.css">
   </head>
-
+    <header>
+       <h1>Моя таблица</h1>
+      <img src="image.png" alt="Шапка сайта" class="header-image">
+    </header>
+  <nav>
+       <ul>
+           <li><a href="http://kubsu.ru/">Главная</a></li>
+           <li><a href="#">Таблицы</a></li>
+           <li><a href="#">Контакты</a></li>
+       </ul>
+   </nav>
+ <table id="main-table">
+  <thead>
+   <tr>
+    <th><a href="https://www.kubsu.ru/ru/studlist">списки</a></th>
+    <th>Колонка 2</th>
+    <th>Колонка 3</th>
+    <th>Колонка 4</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td colspan="2">Ячейка 1-2 объединённая</td>
+    <td>Ячейка 3</td>
+    <td>Ячейка 4</td>
+   </tr>
+   <tr class="odd">
+    <td>Ячейка 5</td>
+    <td colspan="2" rowspan="2">Объеденённая ячейка 6-7</td>
+    <td>Ячейка 8</td>
+   </tr>
+   <tr class="even">
+    <td>Ячейка 9</td>
+    <td>Ячейка 10</td>
+   </tr>
+   <tr class="odd">
+    <td>Ячейка 11</td>
+    <td>Ячейка 12</td>
+    <td colspan="2">Объединённая ячейка 13-14</td>
+   </tr>
+   <tr class="even">
+    <td colspan="4">Полностью объединённая строка</td>
+   </tr>
+   <tr class="odd">
+    <td>Ячейка 16</td>
+    <td>Ячейка 17</td>
+    <td>Ячейка 18</td>
+    <td>Ячейка 19</td>
+   </tr>
+  </tbody>
+  <tfoot>
+   <tr>
+    <td colspan="4">Сергей Синица - Таблица с объединёнными ячейками</td>
+   </tr>
+  </tfoot>
+ </table>
+ <footer>
+  <p>&copy; 2025 Мой сайт </p>
+ </footer>
+</body>
+</head>
   <body>
     <h1>Список гиперссылок</h1>
     <ul>
