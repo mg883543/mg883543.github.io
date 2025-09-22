@@ -1,17 +1,17 @@
    body{
- background-color: lightgreen !important;
+ background-color: #c7c9bf;
  margin: 0;
  font-family: Arial;
  }
    header{
- background-color: #acd89c;
+ background-color: #474E2B;
  color: white;
  padding: 20px 0;
  text-align: center;
  width: 100%;
  }
    nav{
- background-color: #94cd80;
+ background-color: ##6b7155;
  width: 150%;
  }
   nav ul{
