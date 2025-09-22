@@ -4,14 +4,14 @@
  font-family: Arial;
  }
    header{
- background-color: #2c3e70;
+ background-color: #acd89c;
  color: white;
  padding: 20px 0;
  text-align: center;
  width: 100%;
  }
    nav{
- background-color: #2c3e90;
+ background-color: #94cd80;
  width: 150%;
  }
   nav ul{
@@ -48,28 +48,28 @@
      padding: 10px;
  }
    th, td {
-            border: 2px solid #3498db;
+            border: 2px solid #71bc58;
             padding: 15px;
             text-align: center;
         }
    th {
-            background-color: #3498db;
+            background-color: #71bc58;
             color: white;
             font-weight: bold;
         }
   tr.even {
-            background-color: #ecf0f1;
+            background-color: #000000;
         }
   tr.odd {
             background-color: #bdc3c7;
         }
   tfoot td {
-            background-color: #2c3e50;
+            background-color: #94cd80;
             color: white;
             font-weight: bold;
         }
   footer {
-            background-color: #2c3e50;
+            background-color: #94cd80;
             color: white;
             text-align: center;
             padding: 10px 0;
