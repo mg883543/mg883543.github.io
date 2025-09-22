@@ -36,6 +36,7 @@ main {
 }
 table{
    width: 100%;
+   max-width: 960px;
    border-collapse: collapse;
    margin: 20px 0;
    background-color: white;
@@ -69,7 +70,6 @@ tfoot td {
       color: white;
       font-weight: bold;
       max-width: 960px;
-
 }
 footer {
    background-color: #474E2B;
@@ -78,6 +78,7 @@ footer {
    padding: 10px 0;
    width: 150%;
 }
+
 
 
 
