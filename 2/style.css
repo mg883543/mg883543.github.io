@@ -19,7 +19,6 @@ nav ul{
    padding: 8px 0;
    display: flex;
    justify-content: center;
-   max-width: 960px;
    margin: 0 auto;
  }
 nav li{
@@ -76,5 +75,6 @@ footer {
    margin: 0 auto;
    padding: 0 20px;
 }
+
 
 
