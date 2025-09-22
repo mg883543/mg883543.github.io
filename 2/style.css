@@ -8,7 +8,7 @@ header{
    color: white;
    padding: 20px 0;
    text-align: center;
-   width: 100%;
+   width: 150%;
 }
 nav{
    background-color: #6b7155;
@@ -24,10 +24,6 @@ nav ul{
  }
 nav li{
    margin: 0 45px;
- }
-nav a{
-   color: white;
-   display: block;
  }
 main {
    max-width: 960px;
@@ -80,4 +76,5 @@ footer {
    margin: 0 auto;
    padding: 0 20px;
 }
+
 
