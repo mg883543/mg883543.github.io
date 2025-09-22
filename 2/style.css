@@ -2,6 +2,7 @@ body{
       background-color: #c7c9bf;
       margin: 0;
       font-family: Arial;
+      min-height: 100vh;
    }
 header{
    background-color: #474E2B;
@@ -10,17 +11,26 @@ header{
    text-align: center;
    width: 100%;
 }
+.header-content {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+}
 nav{
    background-color: #6b7155;
-   width: 50%;
+   width: 100%;
  }
+  .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+      }
 nav ul{
       list-style: none;
       padding: 8px 0;
       display: flex;
       justify-content: center;
-      max-width: 960px;
-      margin: 0 auto;
+      margin: 0;
 }
 nav li{
    margin: 0 45px;
@@ -74,7 +84,14 @@ footer {
    text-align: center;
    padding: 10px 0;
    width: 100%;
+   margin-top: auto;
 }
+.footer-content {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+        }
+
 
 
 
