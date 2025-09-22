@@ -48,12 +48,12 @@ table{
    padding: 10px;
  }
 th, td {
-   border: 2px solid #265a0f;
+   border: 2px solid #6b7155;
    padding: 15px;
    text-align: center;
 }
 th {
-   background-color: #305610;
+   background-color: #6b7155;
    color: white;
    font-weight: bold;
 }
@@ -61,7 +61,7 @@ tr.even {
    background-color: #000000;
 }
 tr.odd {
-   background-color: #49ac32;
+   background-color: #6b7155;
 }
 tfoot td {
    background-color: #667825;
@@ -80,3 +80,4 @@ footer {
    margin: 0 auto;
    padding: 0 20px;
 }
+
