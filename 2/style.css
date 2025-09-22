@@ -15,14 +15,19 @@ nav{
    width: 150%;
  }
 nav ul{
-   list-style: none;
-   padding: 8px 0;
-   display: flex;
-   justify-content: center;
-   margin: 0 auto;
- }
+      list-style: none;
+      padding: 8px 0;
+      display: flex;
+      justify-content: center;
+      max-width: 960px;
+      margin: 0 auto;
+}
 nav li{
    margin: 0 45px;
+ }
+ nav a{
+ color: white;
+ display: block;
  }
 main {
    max-width: 960px;
@@ -34,7 +39,7 @@ table{
    border-collapse: collapse;
    margin: 20px 0;
    background-color: white;
-   border: 2px solid #346b1b;
+   border: 2px solid #6b7155;
  }
 #main-table th a {
    color: white;
@@ -53,13 +58,13 @@ th {
    font-weight: bold;
 }
 tr.even {
-   background-color: ##676a5c;
+   background-color: #676a5c;
 }
 tr.odd {
    background-color: #6b7155;
 }
 tfoot td {
-   background-color: #667825;
+   background-color: #474E2B;
    color: white;
    font-weight: bold;
 }
@@ -68,13 +73,9 @@ footer {
    color: white;
    text-align: center;
    padding: 10px 0;
-   width: 100%;
+   width: 150%;
 }
-.footer-container {
-   max-width: 960px;
-   margin: 0 auto;
-   padding: 0 20px;
-}
+
 
 
 
