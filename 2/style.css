@@ -53,7 +53,7 @@ th {
    font-weight: bold;
 }
 tr.even {
-   background-color: #000000;
+   background-color: ##676a5c;
 }
 tr.odd {
    background-color: #6b7155;
@@ -75,6 +75,7 @@ footer {
    margin: 0 auto;
    padding: 0 20px;
 }
+
 
 
 
