@@ -65,9 +65,11 @@ tr.odd {
    background-color: #6b7155;
 }
 tfoot td {
-   background-color: #474E2B;
-   color: white;
-   font-weight: bold;
+      background-color: #474E2B;
+      color: white;
+      font-weight: bold;
+      max-width: 960px;
+
 }
 footer {
    background-color: #474E2B;
@@ -76,6 +78,7 @@ footer {
    padding: 10px 0;
    width: 150%;
 }
+
 
 
 
