@@ -270,7 +270,6 @@ a:hover {
     text-decoration: none;
 }
 
-/* Медиа-запросы для планшетов */
 @media (min-width: 768px) {
     .header-content {
         flex-direction: row;
@@ -304,8 +303,8 @@ a:hover {
     }
     
     .content-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
     }
     
@@ -316,7 +315,7 @@ a:hover {
     
     .links-section {
         order: 1;
-        width: calc(30% - 10px);
+        width: 100%;
         margin-right: 0;
     }
     
@@ -327,6 +326,7 @@ a:hover {
     
     .content-section {
         padding: 20px;
+        width: 100%;
     }
     
     table {
@@ -343,6 +343,7 @@ p {
     text-align: justify;
 
 }
+
 
 
 
