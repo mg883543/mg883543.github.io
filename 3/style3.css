@@ -33,6 +33,7 @@ header {
     max-width: 100%;
     height: auto;
     margin-top: 10px;
+    text-align: center;
 }
 
 nav {
@@ -235,14 +236,23 @@ a:hover {
 
 .table-section {
     order: 1;
+    width: 100%;
 }
 
 .links-section {
     order: 2;
+    width: 100%;
 }
 
 .form-section {
     order: 3;
+    width: 100%;
+}
+
+.content-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-section a {
@@ -331,4 +341,5 @@ a:hover {
 p {
     margin-bottom: 10px;
     text-align: justify;
+
 }
