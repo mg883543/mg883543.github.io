@@ -306,6 +306,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        width: 100%;
     }
     
     .table-section {
@@ -343,6 +344,7 @@ p {
     text-align: justify;
 
 }
+
 
 
 
