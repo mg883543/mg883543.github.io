@@ -1,0 +1,189 @@
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <header>
+        <div className="header-content">
+          <h1>Сайт</h1>
+          <img src="image.png" alt="Шапка сайта" className="header-image"/>
+        </div>
+      </header>
+      
+      <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Таблицы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      
+      <main>
+        <div className="content-wrapper">
+          <section className="table-section content-section">
+            <h2>Моя таблица</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Списки</th>
+                  <th>Колонка 2</th>
+                  <th>Колонка 3</th>
+                  <th>Колонка 4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colSpan="2">Ячейка 1-2 объединённая</td>
+                  <td>Ячейка 3</td>
+                  <td>Ячейка 4</td>
+                </tr>
+                <tr className="odd">
+                  <td>Ячейка 5</td>
+                  <td colSpan="2" rowSpan="2">Объеденённая ячейка 6-7</td>
+                  <td>Ячейка 8</td>
+                </tr>
+                <tr className="even">
+                  <td>Ячейка 9</td>
+                  <td>Ячейка 10</td>
+                </tr>
+                <tr className="odd">
+                  <td>Ячейка 11</td>
+                  <td>Ячейка 12</td>
+                  <td colSpan="2">Объединённая ячейка 13-14</td>
+                </tr>
+                <tr className="even">
+                  <td colSpan="4">Полностью объединённая строка</td>
+                </tr>
+                <tr className="odd">
+                  <td>Ячейка 16</td>
+                  <td>Ячейка 17</td>
+                  <td>Ячейка 18</td>
+                  <td>Ячейка 19</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colSpan="4">Таблица с объединёнными ячейками</td>
+                </tr>
+              </tfoot>
+            </table>
+          </section>
+          
+          <section className="links-section content-section">
+            <h2>Список гиперссылок</h2>
+            <ul className="links-list">
+              <li><a href="http://kubsu.ru/">КубГУ</a></li>
+              <li><a href="https://kubsu.ru/">КубГу (https)</a></li>
+              <li><img src="image.jpg" alt="Цветок" width="200" height="150"/></li>
+              <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
+              <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+              <li><a href="#form-section">Ссылка на фрагмент страницы</a></li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&start=120&autoplay=1&list=PLxyz123">Смотреть видео со 2-й минуты (автозапуск)</a>
+              </li>
+              <li><a href="https://en.wikipedia.org/w/index.php?curid=12345">Ссылка с параметром</a></li>
+              <li><a href="contact.html">Относительная ссылка в текущем каталоге</a></li>
+              <li><a href="about/index.html">Относительная ссылка в каталоге about</a></li>
+              <li><a href="../page.html">Относительная ссылка на уровень выше</a></li>
+              <li><a href="../../page.html">Относительная ссылка на два уровня выше</a></li>
+              <li>
+                <p>Это абзац с <a href="https://kubsu.ru/">контекстной ссылкой</a> внутри текста.</p>
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/ru/docs/Web/HTML#reference">Ссылка на фрагмент MDN</a>
+              </li>
+              <li>
+                <img src="i.png" useMap="#фигуры" width="300" height="150" alt="Изображение с картой ссылок"/>
+              </li>
+              <li><a href="">Ссылка с пустым href</a></li>
+              <li><a>Ссылка без href</a></li>
+              <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка с rel="nofollow"</a></li>
+              <li><a href="https://kubsu.ru/" rel="noindex">Ссылка с rel="noindex"</a></li>
+              <li>
+                <ol>
+                  <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">КубГУ с title</a></li>
+                  <li><a href="https://kubsu.ru/en/" title="English version of KubSU">КубГУ English с title</a></li>
+                </ol>
+              </li>
+              <li><a href="ftp://username:password@ftp.example.com/file.pdf">Ссылка на FTP файл</a></li>
+            </ul>
+          </section>
+          
+          <section className="form-section content-section">
+            <h3 id="form-section">Форма обратной связи</h3>
+            <form action="/submit" method="post">
+              <div className="form-group">
+                <label htmlFor="fullname">ФИО:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Введите ваше полное имя"/>
+              </div>
+              <div className="form-group">
+                <label htmlFor="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX"/>                    </div>
+              <div className="form-group">
+                <label htmlFor="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com"/>
+              </div>
+              <div className="form-group">
+                <label htmlFor="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate" required/>
+              </div>
+              <div className="form-group">
+                <label>Пол:</label>
+                <div className="radio-group">
+                  <div className="radio-option">
+                    <input type="radio" id="male" name="gender" value="male" required/>
+                    <label htmlFor="male">Мужской</label>
+                  </div>
+                  <div className="radio-option">
+                    <input type="radio" id="female" name="gender" value="female"/>
+                    <label htmlFor="female">Женский</label>
+                  </div>
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="language">Любимый язык программирования:</label>
+                <small>Для множественного выбора используйте Ctrl+Click (или Cmd+Click на Mac)</small>
+                <div>
+                  <select id="language" name="language" multiple size="5" required>
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskel">Haskel</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+                  </select>
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="bio">Биография:</label>
+                <div><textarea id="bio" name="bio" rows="5" required placeholder="Расскажите о себе"></textarea></div>
+              </div>
+              <div className="form-group">
+                <div className="checkbox-group">
+                  <input type="checkbox" id="agreement" name="agreement" required/>
+                  <label htmlFor="agreement">Ознакомлен(а)</label>
+                </div>
+              </div>
+              <button type="submit">Сохранить</button>
+            </form>
+            <a href="#">Наверх</a>
+          </section>
+        </div>
+      </main>
+      
+      <footer>
+        <p>&copy; 2025 Мой сайт</p>
+      </footer>
+    </>
+  )
+}
+
+export default App
