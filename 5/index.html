@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор стоимости</title>
+</head>
+<body>
+    <h1>Калькулятор стоимости заказа</h1>
+    
+    <div id="result"></div>
+    
+    <form>
+        <input name="quantity" type="text" placeholder="Количество">
+        
+        <select name="product">
+            <option value="320">Филадельфия - 320 руб.</option>
+            <option value="280">Калифорния - 280 руб.</option>
+            <option value="350">Унаги - 350 руб.</option>
+        </select>
+        
+        <button onclick="return calculate();">Рассчитать</button>
+    </form>
+
+    <script src="calculator.js" defer></script>
+</body>
+</html>
