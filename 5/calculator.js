@@ -1,3 +1,4 @@
+window.addEventListener('DOMContentLoaded', function() {});
 function calculate() {
     let q = document.getElementsByName("quantity");
     let p = document.getElementsByName("product");
