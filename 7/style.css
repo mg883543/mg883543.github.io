@@ -18,7 +18,6 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    position: relative;
 }
 
 .gallery-title {
@@ -41,7 +40,7 @@ body {
 }
 
 .slide {
-    flex: 0 0 33.333%;
+    flex-shrink: 0;
     padding: 10px;
 }
 
@@ -116,15 +115,28 @@ body {
     background-color: #4a6ee0;
 }
 
-@media (max-width: 992px) {
+.debug-info {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (min-width: 993px) {
     .slide {
-        flex: 0 0 50%;
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 577px) {
+    .slide {
+        width: 50%;
     }
 }
 
 @media (max-width: 576px) {
     .slide {
-        flex: 0 0 100%;
+        width: 100%;
     }
     
     .nav-btn {

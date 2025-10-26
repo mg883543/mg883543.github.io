@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерея-слайдер</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
     <div class="gallery-container">
         <h1 class="gallery-title">Галерея изображений</h1>
+        
         <div class="slider-container">
-            <div class="slider"></div>
-            <button class="nav-btn prev-btn" aria-label="Предыдущее изображение">&#10094;</button>
-            <button class="nav-btn next-btn" aria-label="Следующее изображение">&#10095;</button>
+            <div class="slider" id="slider">
+            </div>
+            
+            <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+            <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
         </div>
+        
         <div class="pager">
-            <span class="current-page">1</span>
+            <span id="currentPage">1</span>
             <span>из</span>
-            <span class="total-pages">3</span>
-            <div class="pager-dots"></div>
+            <span id="totalPages">3</span>
+            <div class="pager-dots" id="pagerDots">
+            </div>
+        </div>
+        
+        <div class="debug-info">
+            Всего изображений: <strong>8</strong> | 
+            Отображается на странице: <strong id="slidesPerViewInfo">3</strong> | 
+            Всего страниц: <strong id="totalPagesInfo">3</strong>
         </div>
     </div>
     <script src="image.js" defer></script>
